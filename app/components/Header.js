@@ -4,7 +4,9 @@ import TodoTextInput from './TodoTextInput';
 export default class Header extends Component {
 
   static propTypes = {
-    addTodo: PropTypes.func.isRequired
+    addTodo: PropTypes.func.isRequired,
+    addWebsite: PropTypes.func.isRequired,
+    website: PropTypes.string.isRequired
   };
 
   handleSave = text => {
@@ -13,10 +15,16 @@ export default class Header extends Component {
     }
   };
 
+  renderTitle() {
+    return (
+      <h1>{this.props.website}</h1>
+    );
+  }
+
   render() {
     return (
       <header>
-        <h1>todos</h1>
+        {this.renderTitle()}
         <TodoTextInput
           newTodo
           onSave={this.handleSave}

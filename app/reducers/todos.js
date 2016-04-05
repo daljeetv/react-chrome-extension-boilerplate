@@ -41,6 +41,10 @@ const actionsMap = {
   },
   [ActionTypes.CLEAR_COMPLETED](state, action) {
     return state.filter(todo => todo.completed === false);
+  },
+  [ActionTypes.ADD_WEBSITE](state, action) {
+    state.website = "www.gmail.com";
+    return state;
   }
 };
 

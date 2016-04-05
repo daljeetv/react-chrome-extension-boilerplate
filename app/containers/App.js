@@ -8,7 +8,8 @@ import style from './App.css';
 
 @connect(
   state => ({
-    todos: state.todos
+    todos: state.todos,
+    website: state.website
   }),
   dispatch => ({
     actions: bindActionCreators(TodoActions, dispatch)
@@ -18,15 +19,16 @@ export default class App extends Component {
 
   static propTypes = {
     todos: PropTypes.array.isRequired,
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    website: PropTypes.string.isRequired
   };
 
   render() {
-    const { todos, actions } = this.props;
+    const { todos, actions, website } = this.props;
 
     return (
       <div className={style.normal}>
-        <Header addTodo={actions.addTodo} />
+        <Header addTodo={actions.addTodo} addWebsite={actions.addWebsite} website={website} />
         <MainSection todos={todos} actions={actions} />
       </div>
     );
