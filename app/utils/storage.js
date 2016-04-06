@@ -1,5 +1,4 @@
 function saveState(state) {
-  state.website = "www.gma.com"
   chrome.storage.local.set({ state: JSON.stringify(state) });
 }
 

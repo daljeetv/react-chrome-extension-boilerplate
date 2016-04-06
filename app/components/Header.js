@@ -15,9 +15,22 @@ export default class Header extends Component {
     }
   };
 
+  componentWillMount() {
+    this.setState({website: this.getWebsite()})
+  };
+
+
+  getWebsite() {
+    var website ;
+    chrome.tabs.getSelected(null,function(tab) {
+      website = tab.url;
+      this.setState({website: website});
+    }.bind(this));
+    // Todo: send information to server. 
+  }
   renderTitle() {
     return (
-      <h1>{this.props.website}</h1>
+      <h3>{this.state.website}</h3>
     );
   }
 
@@ -28,7 +41,7 @@ export default class Header extends Component {
         <TodoTextInput
           newTodo
           onSave={this.handleSave}
-          placeholder="What needs to be done?"
+          placeholder="Thoughts?!"
         />
       </header>
     );
