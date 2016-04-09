@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 import * as TodoActions from '../actions/todos';
 import style from './App.css';
+import Home from '../components/Home';
 
 @connect(
   state => ({
@@ -26,6 +27,12 @@ export default class App extends Component {
   render() {
     const { todos, actions, website } = this.props;
 
+    return (
+        <div className={style.normal}>
+            <Home />
+        </div>
+
+    )
     return (
       <div className={style.normal}>
         <Header addTodo={actions.addTodo} addWebsite={actions.addWebsite} website={website} />
