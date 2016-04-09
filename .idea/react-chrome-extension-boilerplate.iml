@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="react-chrome-extension-boilerplate node_modules" level="project" />
+    <orderEntry type="library" name="react-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="webpack-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="redux-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="jade-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="bluebird-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="react-redux-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="material-ui-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="chrome-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="node-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="twitter-DefinitelyTyped" level="application" />
+  </component>
+</module>

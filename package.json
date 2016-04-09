@@ -43,6 +43,7 @@
     "chai": "^3.2.0",
     "chromedriver": "^2.19.0",
     "co-mocha": "^1.1.2",
+    "codebird": "^2.6.0",
     "cross-env": "^1.0.7",
     "crx": "^3.0.3",
     "css-loader": "^0.23.1",

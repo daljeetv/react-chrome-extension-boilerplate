@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     todoapp: path.join(__dirname, '../chrome/extension/todoapp'),
     background: path.join(__dirname, '../chrome/extension/background'),
-    inject: path.join(__dirname, '../chrome/extension/inject')
+    inject: path.join(__dirname, '../chrome/extension/inject'),
+    oauth2: path.join(__dirname, '../chrome/oauth2/oauth2')
   },
   output: {
     path: path.join(__dirname, '../build/js'),
